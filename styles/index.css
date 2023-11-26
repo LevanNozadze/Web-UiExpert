@@ -1,5 +1,10 @@
-/* font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif; */
+/* 
+
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+*/
 body {
     padding: 60px 80px 130px 130px;
 }
@@ -8,6 +13,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 30px 272px 0px 130px;
+    background-color: #ededed;
+}
+
+.logo {
+    cursor: pointer;
 }
 
 ul {
@@ -17,14 +33,29 @@ ul {
     font-family: 'Lato', sans-serif;
     color: #3D37F1;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .ui-service {
     display: flex;
     flex-direction: column;
     max-width: 635px;
-    margin-top: 370px;
     gap: 40px;
+}
+
+ul li a {
+    color: #3D37F1;
+}
+
+ul li a:hover {
+    color: #1E1A7B;
+}
+
+section {
+    margin-top: 370px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 h1 {
@@ -32,6 +63,7 @@ h1 {
     font-size: 78px;
     color: #534D4D;
     font-weight: bold;
+    line-height: 100px;
 }
 
 p {
@@ -39,3 +71,35 @@ p {
     font-size: 22px;
     color: #534D4D;
 }
+
+.Wave-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    border-radius: 38px;
+    width: 263.67px;
+    height: 76.77px;
+    background-color: #3D37F1;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+
+.Wave-me:hover {
+    background-color: #5537F1;
+}
+
+.Wave-me::before {
+    content:url(../assets/imgs/waving-hand.png);
+    margin-right: 30px;
+}
+
+.secound {
+    display: flex;
+    margin-top: 360px;
+}
+
